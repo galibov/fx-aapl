@@ -41,7 +41,6 @@ export const Home: FC = () => {
       startTime: timeStepsMap[TimeStepsEnum.OneMinute].start,
       endTime: timeStepsMap[TimeStepsEnum.OneMinute].end,
     })
-      .then((res) => {})
       .catch((err) => {
         console.log(err);
       });

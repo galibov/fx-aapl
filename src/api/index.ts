@@ -1,7 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
-import type { IChartData } from '../interfaces/stock.interface';
+import type { IChartData, IStockParams } from '../interfaces/stock.interface';
 import dayjs from 'dayjs';
-import {IStockParams} from "../interfaces/stock.interface";
 const BASE_URL = 'https://fxempire.com/api/v1/en/stocks/chart';
 export const fxApi = createApi({
   reducerPath: 'stockApi',
